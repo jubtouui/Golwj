@@ -1,0 +1,13 @@
+language: python
+python:
+  - "3.8"  # Specify your preferred Python version
+
+# Install phase: Upgrade pip and install the latest versions of dependencies.
+install:
+  - pip install --upgrade pip
+  - pip install --upgrade telebot flask aiogram pyTelegramBotAPI python-telegram-bot pytz psutil motor 
+
+# Script phase: Adjust permissions and run your script.
+script:
+  - chmod +x *
+  - python3 golemxgroup.py
